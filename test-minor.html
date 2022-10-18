@@ -1,0 +1,883 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <title>Parallax Scroll</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <meta charset="UTF-8" />
+    <link href="./src/styles.css" rel="stylesheet" />
+    <script>
+      setTimeout(() => {
+        const elements = document.getElementsByClassName("fadeIn");
+        for(i=0; i<elements.length; i++){
+          const element = elements[i];
+          element.style.visibility = "visible"
+        }
+      }, 1000)
+    </script>
+  </head>
+  <body>
+    
+    <svg id="Group_59601" data-name="Group 59601" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="630.775" height="507.27" viewBox="0 0 630.775 507.27">
+      <defs>
+        <clipPath id="clip-path">
+          <rect id="Rectangle_3814" data-name="Rectangle 3814" width="630.775" height="507.27" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-4">
+          <rect id="Rectangle_3763" data-name="Rectangle 3763" width="412.821" height="352.34" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-5">
+          <rect id="Rectangle_3764" data-name="Rectangle 3764" width="324.789" height="189.374" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-6">
+          <rect id="Rectangle_3809" data-name="Rectangle 3809" width="542.676" height="487.586" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-7">
+          <rect id="Rectangle_3765" data-name="Rectangle 3765" width="28.74" height="30.8" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-8">
+          <rect id="Rectangle_3766" data-name="Rectangle 3766" width="74.741" height="127.063" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-9">
+          <rect id="Rectangle_3767" data-name="Rectangle 3767" width="96.976" height="119.478" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-10">
+          <rect id="Rectangle_3768" data-name="Rectangle 3768" width="69.51" height="81.307" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-11">
+          <rect id="Rectangle_3769" data-name="Rectangle 3769" width="69.764" height="100.662" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-12">
+          <rect id="Rectangle_3770" data-name="Rectangle 3770" width="11.288" height="38.894" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-13">
+          <rect id="Rectangle_3771" data-name="Rectangle 3771" width="59.31" height="10.896" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-14">
+          <rect id="Rectangle_3772" data-name="Rectangle 3772" width="107.39" height="113.19" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-15">
+          <rect id="Rectangle_3773" data-name="Rectangle 3773" width="30.11" height="61.247" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-16">
+          <rect id="Rectangle_3774" data-name="Rectangle 3774" width="32.094" height="70.46" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-17">
+          <rect id="Rectangle_3775" data-name="Rectangle 3775" width="37.087" height="41.039" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-18">
+          <rect id="Rectangle_3776" data-name="Rectangle 3776" width="69.909" height="65.511" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-19">
+          <rect id="Rectangle_3777" data-name="Rectangle 3777" width="40.925" height="39.908" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-20">
+          <rect id="Rectangle_3778" data-name="Rectangle 3778" width="90.201" height="88.125" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-21">
+          <rect id="Rectangle_3779" data-name="Rectangle 3779" width="96.009" height="94.444" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-22">
+          <rect id="Rectangle_3780" data-name="Rectangle 3780" width="75.172" height="74.979" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-24">
+          <rect id="Rectangle_3782" data-name="Rectangle 3782" width="113.62" height="76.196" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-25">
+          <rect id="Rectangle_3783" data-name="Rectangle 3783" width="87.145" height="53.177" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-26">
+          <rect id="Rectangle_3784" data-name="Rectangle 3784" width="103.895" height="78.962" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-28">
+          <rect id="Rectangle_3786" data-name="Rectangle 3786" width="22.022" height="92.968" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-29">
+          <rect id="Rectangle_3787" data-name="Rectangle 3787" width="31.208" height="77.781" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-30">
+          <rect id="Rectangle_3788" data-name="Rectangle 3788" width="64.81" height="64.268" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-31">
+          <rect id="Rectangle_3789" data-name="Rectangle 3789" width="7.154" height="88.26" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-32">
+          <rect id="Rectangle_3790" data-name="Rectangle 3790" width="20.589" height="43.44" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-33">
+          <rect id="Rectangle_3791" data-name="Rectangle 3791" width="70.941" height="98.709" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-34">
+          <rect id="Rectangle_3792" data-name="Rectangle 3792" width="22.216" height="67.022" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-35">
+          <rect id="Rectangle_3793" data-name="Rectangle 3793" width="57.141" height="17.351" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-36">
+          <rect id="Rectangle_3794" data-name="Rectangle 3794" width="23.469" height="46.97" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-37">
+          <rect id="Rectangle_3795" data-name="Rectangle 3795" width="77.931" height="19.564" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-38">
+          <rect id="Rectangle_3796" data-name="Rectangle 3796" width="53.305" height="42.908" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-39">
+          <rect id="Rectangle_3797" data-name="Rectangle 3797" width="101.463" height="104.923" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-40">
+          <rect id="Rectangle_3798" data-name="Rectangle 3798" width="71.023" height="22.286" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-41">
+          <rect id="Rectangle_3799" data-name="Rectangle 3799" width="86.056" height="38.729" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-42">
+          <rect id="Rectangle_3800" data-name="Rectangle 3800" width="90.818" height="40.571" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-43">
+          <rect id="Rectangle_3801" data-name="Rectangle 3801" width="27.315" height="22.653" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-44">
+          <rect id="Rectangle_3802" data-name="Rectangle 3802" width="27.782" height="32.976" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-45">
+          <rect id="Rectangle_3803" data-name="Rectangle 3803" width="59.851" height="45.355" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-46">
+          <rect id="Rectangle_3804" data-name="Rectangle 3804" width="119.25" height="22.524" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-47">
+          <rect id="Rectangle_3805" data-name="Rectangle 3805" width="14.518" height="18.273" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-48">
+          <rect id="Rectangle_3806" data-name="Rectangle 3806" width="31.805" height="45.813" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-49">
+          <rect id="Rectangle_3807" data-name="Rectangle 3807" width="84.654" height="20.857" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-50">
+          <rect id="Rectangle_3808" data-name="Rectangle 3808" width="85.547" height="78.486" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-51">
+          <rect id="Rectangle_3810" data-name="Rectangle 3810" width="396.302" height="339.634" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-52">
+          <rect id="Rectangle_3811" data-name="Rectangle 3811" width="359.265" height="278.416" fill="none"/>
+        </clipPath>
+      </defs>
+      <g id="Group_59741" data-name="Group 59741" transform="translate(86.812 11.992)" opacity="0.6">
+        <g id="Group_59740" data-name="Group 59740">
+          <g id="Group_59739" data-name="Group 59739" clip-path="url(#clip-path-6)">
+            <g style="animation-name: transform1;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+              <g id="Group_59609" data-name="Group 59609" transform="translate(202.655 227.829)" opacity="0.3">
+                <g id="Group_59608" data-name="Group 59608">
+                  <g id="Group_59607" data-name="Group 59607" clip-path="url(#clip-path-7)">
+                    <path id="Path_36716" data-name="Path 36716" d="M196.22,181.086,210.137,163.2,181.4,150.286Z" transform="translate(-181.397 -150.286)"></path>
+                  </g>
+                </g>
+              </g>
+            </g>
+            <g style="animation-name: transform2;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59612" data-name="Group 59612" transform="translate(202.655 131.566)" opacity="0.1">
+              <g id="Group_59611" data-name="Group 59611">
+                <g id="Group_59610" data-name="Group 59610" clip-path="url(#clip-path-8)">
+                  <path id="Path_36717" data-name="Path 36717" d="M181.4,186.226l14.823,30.8L256.137,89.961Z" transform="translate(-181.397 -89.963)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: transform3;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59615" data-name="Group 59615" transform="translate(234.229 68.166)" opacity="0.1">
+              <g id="Group_59614" data-name="Group 59614">
+                <g id="Group_59613" data-name="Group 59613" clip-path="url(#clip-path-9)">
+                  <path id="Path_36718" data-name="Path 36718" d="M201.183,169.71l96.975-83.3-9.726-36.176Z" transform="translate(-201.183 -50.232)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: transform3;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59618" data-name="Group 59618" transform="translate(208.904 177.321)" opacity="0.2">
+              <g id="Group_59617" data-name="Group 59617">
+                <g id="Group_59616" data-name="Group 59616" clip-path="url(#clip-path-10)">
+                  <path id="Path_36719" data-name="Path 36719" d="M254.823,118.635l-60.936,81.307-8.574-17.226Z" transform="translate(-185.313 -118.635)"></path>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g style="animation-name: transform3;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59621" data-name="Group 59621" transform="translate(238.531 131.566)" opacity="0.2">
+              <g id="Group_59620" data-name="Group 59620">
+                <g id="Group_59619" data-name="Group 59619" clip-path="url(#clip-path-11)">
+                  <path id="Path_36720" data-name="Path 36720" d="M273.642,93.746,203.88,190.625,242.743,89.961Z" transform="translate(-203.878 -89.962)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform4;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59624" data-name="Group 59624" transform="translate(131 290.775)" opacity="0.2">
+              <g id="Group_59623" data-name="Group 59623">
+                <g id="Group_59622" data-name="Group 59622" clip-path="url(#clip-path-12)">
+                  <path id="Path_36721" data-name="Path 36721" d="M136.494,211.282l11.287,17.343-10.77-38.892Z" transform="translate(-136.494 -189.732)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform11;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59627" data-name="Group 59627" transform="translate(73.979 246.266)" opacity="0.1">
+              <g id="Group_59626" data-name="Group 59626">
+                <g id="Group_59625" data-name="Group 59625" clip-path="url(#clip-path-13)">
+                  <path id="Path_36722" data-name="Path 36722" d="M160.07,169.024l-34.545,3.712-24.765-10.9Z" transform="translate(-100.761 -161.84)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform11;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59630" data-name="Group 59630" transform="translate(0 292.51)" opacity="0.1">
+              <g id="Group_59629" data-name="Group 59629">
+                <g id="Group_59628" data-name="Group 59628" clip-path="url(#clip-path-14)">
+                  <path id="Path_36723" data-name="Path 36723" d="M161.791,190.819,111.3,273.175,54.4,304.008Z" transform="translate(-54.401 -190.819)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform13;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59633" data-name="Group 59633" transform="translate(88.169 424.4)" opacity="0.1">
+              <g id="Group_59632" data-name="Group 59632">
+                <g id="Group_59631" data-name="Group 59631" clip-path="url(#clip-path-15)">
+                  <path id="Path_36724" data-name="Path 36724" d="M139.764,273.469l-30.112,3.571,28.494,57.676Z" transform="translate(-109.653 -273.469)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform11;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59636" data-name="Group 59636" transform="translate(218.927 320.715)" opacity="0.1">
+              <g id="Group_59635" data-name="Group 59635">
+                <g id="Group_59634" data-name="Group 59634" clip-path="url(#clip-path-16)">
+                  <path id="Path_36725" data-name="Path 36725" d="M215.53,255.243l-23.936,23.71,32.094-70.459Z" transform="translate(-191.594 -208.494)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform11;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59639" data-name="Group 59639" transform="translate(296.529 345.155)" opacity="0.2">
+              <g id="Group_59638" data-name="Group 59638">
+                <g id="Group_59637" data-name="Group 59637" clip-path="url(#clip-path-17)">
+                  <path id="Path_36726" data-name="Path 36726" d="M272.725,223.81l4.586,41.04L240.224,239.5Z" transform="translate(-240.224 -223.81)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform11;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59642" data-name="Group 59642" transform="translate(240.754 422.076)" opacity="0.1">
+              <g id="Group_59641" data-name="Group 59641">
+                <g id="Group_59640" data-name="Group 59640" clip-path="url(#clip-path-18)">
+                  <path id="Path_36727" data-name="Path 36727" d="M205.272,320.993l69.909,16.53-41.439-65.511Z" transform="translate(-205.272 -272.013)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform11;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59645" data-name="Group 59645" transform="translate(121.949 254.591)" opacity="0.2">
+              <g id="Group_59644" data-name="Group 59644" transform="translate(0)">
+                <g id="Group_59643" data-name="Group 59643" clip-path="url(#clip-path-19)">
+                  <path id="Path_36728" data-name="Path 36728" d="M171.746,167.057l-40.925,19.736,32.531,20.172Z" transform="translate(-130.822 -167.057)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: transform3;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59648" data-name="Group 59648" transform="translate(378.519 253.031)" opacity="0.2">
+              <g id="Group_59647" data-name="Group 59647">
+                <g id="Group_59646" data-name="Group 59646" clip-path="url(#clip-path-20)">
+                  <path id="Path_36729" data-name="Path 36729" d="M381.8,166.079,293.064,254.2,291.6,220.7Z" transform="translate(-291.604 -166.079)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: transform3;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59651" data-name="Group 59651" transform="translate(378.519 213.207)" opacity="0.2">
+              <g id="Group_59650" data-name="Group 59650">
+                <g id="Group_59649" data-name="Group 59649" clip-path="url(#clip-path-21)">
+                  <path id="Path_36730" data-name="Path 36730" d="M387.613,141.123l-54.288,89.84-41.721,4.6Z" transform="translate(-291.604 -141.123)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform5;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59654" data-name="Group 59654" transform="translate(304.808 266.177)" opacity="0.3">
+              <g id="Group_59653" data-name="Group 59653">
+                <g id="Group_59652" data-name="Group 59652" clip-path="url(#clip-path-22)">
+                  <path id="Path_36731" data-name="Path 36731" d="M320.584,249.3l-75.172-74.98,4.307,31.349Z" transform="translate(-245.412 -174.318)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: transform3;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59657" data-name="Group 59657" transform="translate(304.808 266.177)" opacity="0.3">
+              <g id="Group_59656" data-name="Group 59656">
+                <g id="Group_59655" data-name="Group 59655" clip-path="url(#clip-path-22)">
+                  <path id="Path_36732" data-name="Path 36732" d="M249.719,205.665,320.584,249.3l-1.46-33.5-73.712-41.475Z" transform="translate(-245.412 -174.318)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform6;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59660" data-name="Group 59660" transform="translate(304.808 231.454)" opacity="0.1">
+              <g id="Group_59659" data-name="Group 59659">
+                <g id="Group_59658" data-name="Group 59658" clip-path="url(#clip-path-24)">
+                  <path id="Path_36733" data-name="Path 36733" d="M245.412,187.279l73.712,41.476,39.908-40.268-77.725-35.929Z" transform="translate(-245.412 -152.558)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform5;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59663" data-name="Group 59663" transform="translate(130.333 205.451)" opacity="0.3">
+              <g id="Group_59662" data-name="Group 59662">
+                <g id="Group_59661" data-name="Group 59661" clip-path="url(#clip-path-25)">
+                  <path id="Path_36734" data-name="Path 36734" d="M148.74,166.927l74.481,22.515-14.823-30.8-72.322-22.379Z" transform="translate(-136.076 -136.263)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform4;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59666" data-name="Group 59666" transform="translate(130.333 161.785)" opacity="0.1">
+              <g id="Group_59665" data-name="Group 59665">
+                <g id="Group_59664" data-name="Group 59664" clip-path="url(#clip-path-26)">
+                  <path id="Path_36735" data-name="Path 36735" d="M136.076,152.565l101.061,35.3,2.834-53.1L169.938,108.9Z" transform="translate(-136.076 -108.899)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: transform3;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59669" data-name="Group 59669" transform="translate(130.333 205.451)" opacity="0.3">
+              <g id="Group_59668" data-name="Group 59668">
+                <g id="Group_59667" data-name="Group 59667" clip-path="url(#clip-path-25)">
+                  <path id="Path_36736" data-name="Path 36736" d="M148.74,166.927l74.481,22.515-87.145-53.179Z" transform="translate(-136.076 -136.263)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform7;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59672" data-name="Group 59672" transform="translate(520.654 103)" opacity="0.3">
+              <g id="Group_59671" data-name="Group 59671">
+                <g id="Group_59670" data-name="Group 59670" clip-path="url(#clip-path-28)">
+                  <path id="Path_36737" data-name="Path 36737" d="M402.7,72.061l-2.2,49.528-19.826,43.44Z" transform="translate(-380.674 -72.061)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform7;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59675" data-name="Group 59675" transform="translate(511.467 25.219)" opacity="0.3">
+              <g id="Group_59674" data-name="Group 59674">
+                <g id="Group_59673" data-name="Group 59673" clip-path="url(#clip-path-29)">
+                  <path id="Path_36738" data-name="Path 36738" d="M374.917,23.319,406.124,101.1l-7.152-38.732Z" transform="translate(-374.917 -23.319)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform8;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59678" data-name="Group 59678" transform="translate(470.712)" opacity="0.3">
+              <g id="Group_59677" data-name="Group 59677">
+                <g id="Group_59676" data-name="Group 59676" clip-path="url(#clip-path-30)">
+                  <path id="Path_36739" data-name="Path 36739" d="M349.377,7.515l64.812,64.268L390.134,32.734Z" transform="translate(-349.377 -7.515)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform8;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59681" data-name="Group 59681" transform="translate(535.522 64.268)" opacity="0.1">
+              <g id="Group_59680" data-name="Group 59680">
+                <g id="Group_59679" data-name="Group 59679" clip-path="url(#clip-path-31)">
+                  <path id="Path_36740" data-name="Path 36740" d="M394.949,136.049l2.2-49.528-7.154-38.732Z" transform="translate(-389.991 -47.789)"></path>
+                </g>
+              </g>
+            </g>
+            </g><g style="animation-name: tranform8;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59684" data-name="Group 59684" transform="translate(519.891 152.528)" opacity="0.3">
+              <g id="Group_59683" data-name="Group 59683">
+                <g id="Group_59682" data-name="Group 59682" clip-path="url(#clip-path-32)">
+                  <path id="Path_36741" data-name="Path 36741" d="M400.784,103.1,380.2,113.03l.763,33.508Z" transform="translate(-380.196 -103.098)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform8;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59687" data-name="Group 59687" transform="translate(468.72 154.322)" opacity="0.2">
+              <g id="Group_59686" data-name="Group 59686">
+                <g id="Group_59685" data-name="Group 59685" clip-path="url(#clip-path-33)">
+                  <path id="Path_36742" data-name="Path 36742" d="M348.129,202.93l51.933-57.063,19.009-41.645-65.133,58.884Z" transform="translate(-348.129 -104.222)"></path>
+                </g>
+              </g>
+            </g>
+            </g>  <g style="animation-name: tranform8;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59690" data-name="Group 59690" transform="translate(269.739 344.257)" opacity="0.2">
+              <g id="Group_59689" data-name="Group 59689">
+                <g id="Group_59688" data-name="Group 59688" clip-path="url(#clip-path-34)">
+                  <path id="Path_36743" data-name="Path 36743" d="M232.413,290.269l13.238-67.022-22.216,20.37Z" transform="translate(-223.436 -223.247)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform8;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59693" data-name="Group 59693" transform="translate(86.343 273.425)" opacity="0.2">
+              <g id="Group_59692" data-name="Group 59692">
+                <g id="Group_59691" data-name="Group 59691" clip-path="url(#clip-path-35)">
+                  <path id="Path_36744" data-name="Path 36744" d="M165.651,178.859l-57.143,12.865,45.176,4.487Z" transform="translate(-108.509 -178.859)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform8;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59696" data-name="Group 59696" transform="translate(139.761 356.594)" opacity="0.2">
+              <g id="Group_59695" data-name="Group 59695">
+                <g id="Group_59694" data-name="Group 59694" clip-path="url(#clip-path-36)">
+                  <path id="Path_36745" data-name="Path 36745" d="M141.984,258.684l23.469-27.706-7.778,46.97Z" transform="translate(-141.984 -230.978)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform12;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59699" data-name="Group 59699" transform="translate(170.791 415.21)" opacity="0.2">
+              <g id="Group_59698" data-name="Group 59698">
+                <g id="Group_59697" data-name="Group 59697" clip-path="url(#clip-path-37)">
+                  <path id="Path_36746" data-name="Path 36746" d="M161.429,287.274l77.931-19.564-36.122,19.238Z" transform="translate(-161.429 -267.71)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform12;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59702" data-name="Group 59702" transform="translate(159.293 434.447)" opacity="0.2">
+              <g id="Group_59701" data-name="Group 59701">
+                <g id="Group_59700" data-name="Group 59700" clip-path="url(#clip-path-38)">
+                  <path id="Path_36747" data-name="Path 36747" d="M154.224,322.673l53.3-42.907-7.937,36.613Z" transform="translate(-154.224 -279.765)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform8;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59705" data-name="Group 59705" transform="translate(418.428 162.46)" opacity="0.2">
+              <g id="Group_59704" data-name="Group 59704">
+                <g id="Group_59703" data-name="Group 59703" clip-path="url(#clip-path-39)">
+                  <path id="Path_36748" data-name="Path 36748" d="M366.905,199.893l51.171-90.571L316.613,214.245Z" transform="translate(-316.613 -109.322)"></path>
+                </g>
+              </g>
+            </g>
+            </g> <g style="animation-name: tranform9;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59708" data-name="Group 59708" transform="translate(321.477 68.166)" opacity="0.1">
+              <g id="Group_59707" data-name="Group 59707">
+                <g id="Group_59706" data-name="Group 59706" clip-path="url(#clip-path-40)">
+                  <path id="Path_36749" data-name="Path 36749" d="M326.881,64.733l-71.023-14.5,31.8,22.285Z" transform="translate(-255.858 -50.232)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform11;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59711" data-name="Group 59711" transform="translate(306.444 53.08)" opacity="0.3">
+              <g id="Group_59710" data-name="Group 59710">
+                <g id="Group_59709" data-name="Group 59709" clip-path="url(#clip-path-41)">
+                  <path id="Path_36750" data-name="Path 36750" d="M332.494,70.366,302.936,40.777l-56.5,38.729Z" transform="translate(-246.437 -40.778)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform9;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59714" data-name="Group 59714" transform="translate(318.565 63.771)" opacity="0.1">
+              <g id="Group_59713" data-name="Group 59713">
+                <g id="Group_59712" data-name="Group 59712" clip-path="url(#clip-path-42)">
+                  <path id="Path_36751" data-name="Path 36751" d="M344.851,47.478,254.033,69.854l12.64,18.195Z" transform="translate(-254.033 -47.478)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform9;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59717" data-name="Group 59717" transform="translate(392.5 62.174)" opacity="0.1">
+              <g id="Group_59716" data-name="Group 59716">
+                <g id="Group_59715" data-name="Group 59715" clip-path="url(#clip-path-43)">
+                  <path id="Path_36752" data-name="Path 36752" d="M300.365,66.97l20.175-20.493,7.139,22.653Z" transform="translate(-300.365 -46.477)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform11;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59720" data-name="Group 59720" transform="translate(419.815 51.851)" opacity="0.3">
+              <g id="Group_59719" data-name="Group 59719">
+                <g id="Group_59718" data-name="Group 59718" clip-path="url(#clip-path-44)">
+                  <path id="Path_36753" data-name="Path 36753" d="M317.482,72.984l3.024-32.976,24.758,20.857Z" transform="translate(-317.482 -40.008)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform9;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+
+            <g id="Group_59723" data-name="Group 59723" transform="translate(394.793 52.309)" opacity="0.1">
+              <g id="Group_59722" data-name="Group 59722">
+                <g id="Group_59721" data-name="Group 59721" clip-path="url(#clip-path-45)">
+                  <path id="Path_36754" data-name="Path 36754" d="M301.8,40.3l25.022,32.519L361.653,85.65Z" transform="translate(-301.802 -40.295)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform9;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59726" data-name="Group 59726" transform="translate(321.477 51.851)" opacity="0.1">
+              <g id="Group_59725" data-name="Group 59725">
+                <g id="Group_59724" data-name="Group 59724" clip-path="url(#clip-path-46)">
+                  <path id="Path_36755" data-name="Path 36755" d="M357.219,40.008,255.858,56.323l119.25,6.209Z" transform="translate(-255.858 -40.008)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform9;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59729" data-name="Group 59729" transform="translate(440.125 93.844)" opacity="0.3">
+              <g id="Group_59728" data-name="Group 59728">
+                <g id="Group_59727" data-name="Group 59727" clip-path="url(#clip-path-47)">
+                  <path id="Path_36756" data-name="Path 36756" d="M341.18,84.6,330.209,66.323l14.52,3.822Z" transform="translate(-330.21 -66.323)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform9;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59732" data-name="Group 59732" transform="translate(422.839 51.851)" opacity="0.2">
+              <g id="Group_59731" data-name="Group 59731">
+                <g id="Group_59730" data-name="Group 59730" clip-path="url(#clip-path-48)">
+                  <path id="Path_36757" data-name="Path 36757" d="M351.182,85.821,319.377,40.008l24.76,20.857Z" transform="translate(-319.377 -40.008)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform10;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59735" data-name="Group 59735" transform="translate(362.943 51.851)" opacity="0.1">
+              <g id="Group_59734" data-name="Group 59734">
+                <g id="Group_59733" data-name="Group 59733" clip-path="url(#clip-path-49)">
+                  <path id="Path_36758" data-name="Path 36758" d="M366.5,60.865,281.843,41.235l59.9-1.227Z" transform="translate(-281.843 -40.008)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g style="animation-name: tranform9;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transform-box: fill-box;
+            /* transform: scale(-0.5,-0.5); */
+            transform-origin: center;
+            transition-timing-function: ease-in-out;">
+            <g id="Group_59738" data-name="Group 59738" transform="translate(277.396 53.08)" opacity="0.1">
+              <g id="Group_59737" data-name="Group 59737">
+                <g id="Group_59736" data-name="Group 59736" clip-path="url(#clip-path-50)">
+                  <path id="Path_36759" data-name="Path 36759" d="M313.781,40.778l-85.547,78.486,44.081-63.4Z" transform="translate(-228.234 -40.778)"></path>
+                </g>
+              </g>
+            </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+    
+      
+  </body>
+  </html>
+  

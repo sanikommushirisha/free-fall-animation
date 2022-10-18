@@ -1,0 +1,144 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes rotate {
+    25% { transform: rotate(90deg) scale(0.95);}
+    50% { transform: rotate(180deg) scale(0.9); }
+    75% { transform: rotate(270deg) scale(0.95); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+@keyframes transform1 {
+  from {
+    transform: translate(130px, -15px) rotate(-1deg)
+  }
+  to {
+    transform: none
+  }
+}
+
+@keyframes transform2 {
+  from {
+    transform: translate(174px, 50px) rotate(8deg)
+  }
+  to {
+    transform: none
+  }
+}
+@keyframes transform3 {
+  from {
+    transform: translate(170px, 30px) rotate(50deg);
+  }
+  to {
+    transform: none
+  }
+}
+
+@keyframes tranform4 {
+  from {
+    transform: translate(-70px, -50px) rotate(50deg)
+  }
+  to {
+    transform: none
+  }
+}
+@keyframes tranform5 {
+  from {
+    transform: translate(-91px, 102px) rotate(0deg)
+  }
+  to {
+    transform: none
+  }
+}
+@keyframes tranform6 {
+  from {
+    transform: translate3d(-90px, -219px, 6px)
+  }
+  to {
+    transform: none
+  }
+}
+
+@keyframes tranform7 {
+  from {
+    transform: translate(-90px, -105px) rotate(28deg)
+  }
+  to {
+    transform: none
+  }
+}
+
+@keyframes tranform8 {
+  from {
+    transform: translate(-58px, -18px) rotate(-50deg)
+  }
+  to {
+    transform: none
+  }
+}
+
+@keyframes tranform9 {
+  from {
+    transform: translate(-58px, -55px) rotate(-50deg)
+  }
+  to {
+    transform: none
+  }
+}
+
+@keyframes tranform10 {
+  from {
+    transform: translate(-85px, -47px) rotate(-19deg)
+  }
+  to {
+    transform: none
+  }
+}
+
+@keyframes tranform11 {
+  from {
+    transform: translate(-74px, 87px) rotate(-19deg)
+  }
+  to {
+    transform: none
+  }
+}
+
+
+@keyframes tranform12 {
+  from {
+    transform: translate(-4px, -120px) rotate(-19deg)
+  }
+  to {
+    transform: none
+  }
+}
+
+
+@keyframes tranform13 {
+  from {
+    transform: translate(-80px, -180px) rotate(-19deg)
+  }
+  to {
+    transform: none
+  }
+}
+
+@keyframes fadein {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
